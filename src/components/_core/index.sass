@@ -3,3 +3,41 @@
         font-size: 36px
         color: #005c90
         text-transform: uppercase
+
+.head-menu
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-top: 10px
+    @media screen and ( max-width:  1024.98px)
+        overflow-x: auto
+        justify-content: flex-start
+        
+    ul 
+        list-style: none
+        padding: 0
+        display: flex
+        @media screen and ( max-width:  1024.98px)
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            white-space: nowrap
+            
+        li 
+            padding-right: 30px
+            padding-bottom: 10px
+            a 
+                font-size: 12px
+                font-weight: 700
+                font-weight: 500
+                text-transform: uppercase
+                &:hover
+                    color: #ef3b39
+                    border-bottom: 2px solid #ef3b39
+                    padding: 10px
+        @media screen and ( max-width:576px)
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            li 
+                text-align: center
