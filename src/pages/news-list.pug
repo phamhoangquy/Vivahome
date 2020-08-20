@@ -1,0 +1,9 @@
+extends _layout.pug
+
+block var
+	- var title = 'TIN TỨC'
+	- var bodyClass = 'news-list-page'
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/news-list/index.pug
