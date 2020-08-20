@@ -1,0 +1,156 @@
+.block_contact
+	background: #f7fafc
+	.block_title_contact
+		text-align: center
+		padding: 55px 0 35px
+	.background
+		position: relative
+		.img 
+			position: absolute
+			top: 374px
+			right: 0
+			pointer-events: none
+	.left
+		background: #ffffff
+		// box-shadow: 0 3px 20px 0 rgba(0,0,0,.1)
+		padding: 60px
+		@media screen and ( max-width: 576px )
+			padding: 0
+		.logo
+			display: flex
+			align-items: center
+			justify-content: center
+			padding-bottom: 30px
+		.title
+			padding-bottom: 30px
+			@media screen and ( max-width: 576px )
+				padding: 20px
+			h3
+				font-size: 20px
+				color: #005c90
+				font-weight: 600
+		.card-body
+			ul 
+				padding: 0
+				list-style: none
+				@media screen and ( max-width: 576px )
+					padding: 20px 20px
+				li
+					display: flex
+					padding-bottom: 20px
+					@media screen and ( max-width: 576px )
+						padding-bottom: 20px
+					em 
+						color: #005c90 
+					p
+						font-size: 14px
+						color: #5c5c5c
+						padding-left: 10px
+	.text
+		padding-bottom: 20px
+		@media screen and ( max-width: 576px )
+			padding-top: 30px
+	.wrap-form
+		@media screen and(max-width:1025px)
+			margin: 0
+			padding: 0 10px
+		.frm-btnwrap
+			position: absolute
+			bottom: 85px
+			right: 15px
+			clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)
+			// @media screen and(max-width:1025px)
+			// 	margin: 0 !important
+			@media screen and(max-width:767px)
+				position: static
+				display: block
+				clip-path: none
+			.frm-btn
+				input
+					width: 160px
+					height: 40px
+					color: #ffffff
+					background: #ed202e
+					cursor: pointer
+					font-size: 16px
+					font-weight: 400
+					text-align: center
+					border: none
+					// margin-right: 10px
+					&:nth-last-child(2)
+						display: none
+					@media screen and ( max-width:1024px  )
+						input 
+							padding: 0 15px
+		.form-group
+			margin: 5px 0 20px 0
+			span
+				color: #ffffff
+				font-size: 13px
+				&.fa-exclamation-triangle
+					color: firebrick
+			input,textarea
+				padding-left: 20px
+				border: 1px solid #f3f3f3
+				height: 42px
+				width: 100%
+				color: #333
+				background: #ffffff
+				transition: .3s all ease-in-out
+
+				&:focus
+					outline: none
+					box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+			label
+				color: #666666
+				font-size: 14px
+				font-weight: 400
+				margin-bottom: 5px
+			textarea
+				height: 8em
+				padding: 10px 0 0 20px
+		.frm-captcha
+			display: flex
+			@media screen and ( max-width: 576px )
+				display: flex
+				flex-wrap: wrap
+			.frm-captcha-input
+				order: 2
+				@media screen and ( max-width: 1200px )
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding-left: 20px
+					width: 40%
+				@media screen and ( max-width: 1024px )
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding-left: 20px
+				@media screen and ( max-width: 768px )
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding-left: 20px
+				
+				@media screen and ( max-width: 576px )
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding-left: 20px
+					width: 100%
+				@media screen and ( max-width: 576px )
+					padding-top: 30px
+					order: 1
+		.RadCaptcha_Default
+			width: 25%
+			max-width: 25%
+			@media screen and ( max-width: 576px )
+				flex: 0 0 100%
+				max-width: 100%
+
+	.map-wrapper
+		padding-top: 60px
+		padding-bottom: 80px
+		@media screen and ( max-width: 576px )
+			padding-top: 60px
