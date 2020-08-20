@@ -1,0 +1,166 @@
+footer
+	.footer-block
+		position: relative
+		background-image: url('../img/vector-footer.png')
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		width: 100%
+		// background: #013755
+		position: relative
+		padding: 48px
+		.subcrible-title
+			font-size: 14px !important
+		.social-network-title
+			font-size: 16px !important
+		.background
+			position: relative
+			.img 
+				position: absolute
+				top: 345px
+				left: 20px
+				pointer-events: none
+				img
+					width: 500px
+					@media screen and ( max-width: 576px )
+						width: 300px
+		.logo_footer
+			padding-bottom: 30px
+			@media screen and ( max-width: 767px )
+				padding-bottom: 0
+			@media screen and ( max-width: 1024px )
+				padding-bottom: 0
+		.footer.card
+			// width: 100%
+			// &:nth-child(3)
+			// 	display: flex
+			// 	align-items: center
+			// 	justify-content: center
+			// 	@media screen and ( max-width: 576px )
+			// 		display: block
+			// 	@media screen and ( max-width: 1024px )
+			// 		display: block
+			.card_title
+				h4
+					font-size: 16px 
+					font-weight: 600
+					color: #fff
+					padding-bottom: 25px
+					text-transform: uppercase
+					text-align: left
+					@media screen and ( max-width: 767px )
+						padding: 25px 0 0 0
+					@media screen and ( max-width: 1024px )
+						padding: 25px 0 0 0
+			.card_body
+				@media screen and ( max-width: 1024px )
+					text-align: left
+				p
+					font-size: 14px
+					color: #ffffff
+					text-align: left
+				ul 
+					padding: 0
+					list-style: none
+					li
+						// display: flex
+						padding-top: 15px
+						span
+							
+							color: #fff
+							font-size: 12px
+						p
+							font-size: .875rem
+							color: #fff
+						a
+							font-size: .875rem
+							color:#fff
+			@media(max-width: 768.98px)
+				margin-top: 15px !important
+		
+		@media(max-width: 768.98px)
+			padding: 50px 0 30px 0
+			text-align: center
+			.col-md-3.footer.card
+				.card_title
+					h4
+						text-align: left
+				.card_body
+					ul
+						li
+							display: flex
+							align-items: center
+							justify-content: flex-start
+						
+				.card_media
+					display: flex
+					align-items: center
+					justify-content: flex-start
+	
+		.footer-bottom-wrapper
+			padding: 60px 0 0 0
+			display: flex
+			justify-content: space-between
+			@media screen and ( max-width: 767px)
+				padding-top: 25px
+			@media screen and ( max-width: 1024px)
+				padding-top: 25px
+			.footer-bottom-wrapper_list
+				display: flex
+				justify-content: space-between
+				.copy-right
+					color: #666666
+					font-size: 13px 
+					margin-bottom: 0
+					// padding-left: 15px
+					p 
+						color: #ffffff
+						font-size: 13px 
+						margin-bottom: 0
+					a 
+						&:hover
+							border-bottom: 1px solid $green
+					@media screen and ( max-width:767px)
+						padding-right: 50px
+						text-align: center
+				.social-network-share
+					display: flex
+					@media screen and ( max-width: 767px )
+						padding-right: 5px
+					.icon
+						display: flex
+						align-items: center
+						a
+							display: flex
+							justify-content: center
+							align-items: center
+							width: 30px
+							height: 30px
+							margin-right: 5px
+							&:first-child
+								background: none
+								border: 1px solid #ffffff
+							&:nth-child(2)
+								background: none
+								border: 1px solid #ffffff
+							&:nth-child(3)
+								background: red
+							em
+								font-size: 11px
+								height: 11px
+								line-height: 11px
+								color: #ffffff
+								&::before
+									height: 11px
+									line-height: 11px
+						
+			@media screen and ( max-width: 767px  )
+				.footer-top
+					.subscrible-wrapper
+						text-align: left
+			.policy-nav
+				padding: 0
+				a
+					font-size: 12px
+					color: #666666
+					white-space: nowrap
