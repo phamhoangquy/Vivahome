@@ -1,15 +1,69 @@
 $(document).ready(function() {
     swiperInit();
-    toggleMobileMenu();
     showBackToTop();
     coutingNumber();
-    mappingMenu();
-    mappingContact();
-    mappingSearch();
+    activeHeaderWhenScroll();
+    toggleMenuMobile();
+    moveNav();
+    moveSelect();
+    // mappingMenu();
+    // mappingContact();
+    // mappingSearch();
     // setTimeout(() => {
     //     $('#l_0').trigger("click")
     // }, 500);
 });
+$(window).resize(function() {
+        if ($(window).width() <= 1024) {
+            $('.language').appendTo('.header-container #div-mobile');
+            $('.search').appendTo('.header-container #div-mobile')
+        } else {
+            $('.language').appendTo('.nav-item #language-desktop');
+            $('.search').appendTo('.nav-item #search-desktop');
+        }
+
+    })
+    //Toggle menu mobile
+const toggleMenuMobile = () => {
+    $('.header-container__toggle-menu').on('click', function() {
+        $(this).toggleClass('active');
+        $(this).siblings('.header-container__main-nav').toggleClass('active');
+        $('body').toggleClass('disabled');
+    });
+};
+
+//Move nav-item
+function moveNav() {
+    if ($(window).width() <= 1024.98) {
+        $('.language').appendTo('.header-container #div-mobile');
+        $('.search').appendTo('.header-container #div-mobile')
+    } else {
+        $('.language').appendTo('.nav-item #language-desktop');
+        $('.search').appendTo('.nav-item #search-desktop');
+    }
+}
+//Move select fillter product
+function moveSelect() {
+    $('.fillter').appendTo('ul.nav #div');
+    $('.fillter').each(function() {
+        if (!$(this).text().match(/^\s*$/)) {
+            $(this).insertBefore($(this).prev('.nav-item'));
+        }
+    });
+    $('.wrap').appendTo('.content__sidebar #range');
+}
+
+//Header when scroll
+const activeHeaderWhenScroll = () => {
+    const heightHeader = document.querySelector('header').offsetHeight;
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset >= heightHeader) {
+            document.querySelector('header').classList.add('header-croll-down');
+        } else {
+            document.querySelector('header').classList.remove('header-croll-down');
+        }
+    });
+};
 
 function linkAbout() {
     $(".link-to-about-section a").on("click", function(event) {
@@ -231,41 +285,42 @@ function swiperInit() {
 
 }
 
-function toggleMobileMenu() {
-    $(".mobile-toggle").on("click", function() {
-        $(".mobile-wrapper").toggleClass("active");
-    });
-}
 
-function mappingMenu() {
-    return new MappingListener({
-        selector: ".nav-menu-primary",
-        mobileWrapper: ".mobile-wrapper",
-        mobileMethod: "appendTo",
-        desktopWrapper: ".wrapper-bottom",
-        desktopMethod: "appendTo",
-        breakpoint: 1025
-    }).watch();
-}
+// function toggleMobileMenu() {
+//     $(".mobile-toggle").on("click", function() {
+//         $(".mobile-wrapper").toggleClass("active");
+//     });
+// }
 
-function mappingContact() {
-    return new MappingListener({
-        selector: ".contact-wrapper",
-        mobileWrapper: ".mobile-wrapper",
-        mobileMethod: "appendTo",
-        desktopWrapper: ".language-wrapper",
-        desktopMethod: "insertBefore",
-        breakpoint: 1025
-    }).watch();
-}
+// function mappingMenu() {
+//     return new MappingListener({
+//         selector: ".nav-menu-primary",
+//         mobileWrapper: ".mobile-wrapper",
+//         mobileMethod: "appendTo",
+//         desktopWrapper: ".wrapper-bottom",
+//         desktopMethod: "appendTo",
+//         breakpoint: 1025
+//     }).watch();
+// }
 
-function mappingSearch() {
-    return new MappingListener({
-        selector: ".search-wrapper",
-        mobileWrapper: ".mobile-wrapper",
-        mobileMethod: "appendTo",
-        desktopWrapper: ".Module-146",
-        desktopMethod: "insertAfter",
-        breakpoint: 1025
-    }).watch();
-}
+// function mappingContact() {
+//     return new MappingListener({
+//         selector: ".contact-wrapper",
+//         mobileWrapper: ".mobile-wrapper",
+//         mobileMethod: "appendTo",
+//         desktopWrapper: ".language-wrapper",
+//         desktopMethod: "insertBefore",
+//         breakpoint: 1025
+//     }).watch();
+// }
+
+// function mappingSearch() {
+//     return new MappingListener({
+//         selector: ".search-wrapper",
+//         mobileWrapper: ".mobile-wrapper",
+//         mobileMethod: "appendTo",
+//         desktopWrapper: ".Module-146",
+//         desktopMethod: "insertAfter",
+//         breakpoint: 1025
+//     }).watch();
+// }

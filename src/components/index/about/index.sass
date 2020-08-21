@@ -173,13 +173,17 @@
 				position: relative
 				h3
 					color: #49b6eb
+					@media screen and ( max-width: 1024px )
+						text-align: center
+					@media screen and ( max-width: 576px )
+						text-align: center
 					span
 						font-size: 36px
 						color: #49b6eb
 						position: absolute
 						top: 35px
 						left: -70px
-						padding-right: 25px
+						// padding-right: 25px
 						&:nth-child(2)
 							padding-left: 65px
 				span 

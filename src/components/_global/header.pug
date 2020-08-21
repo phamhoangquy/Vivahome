@@ -1,41 +1,87 @@
+//- header
+//- 	.container.flex-space
+//- 		.header-wrapper-left
+//- 			.nav-brand
+//- 				a(href="index.html")
+//- 					img(src="./img/logo-header.png", alt="")
+//- 		.header-wrapper-right
+//- 			.wrapper-top.flex-end
+//- 				.mobile-toggle
+//- 					em.lnr.lnr-menu
+//- 			.wrapper-bottom
+//- 				ul.nav-menu-primary
+//- 					li
+//- 						a(href="about.html") GIỚI THIỆU
+//- 					li
+//- 						a(href="project.html") DỰ ÁN
+//- 					li
+//- 						a(href="news.html") TIN TỨC
+//- 					li
+//- 						a(href="active.html") THƯ VIỆN
+//- 					li
+//- 						a(href="recruitment.html") TUYỂN DỤNG
+//- 					li
+//- 						a(href="contact.html") LIÊN HỆ
+//- 					.language-wrapper
+//- 						.language-toggle
+//- 							.card_img_language
+//- 								.img
+//- 									img(src="./img/language.png", alt="")
+//- 							//- em.lnr.lnr-chevron-down
+//- 						ul.language-list
+//- 							li
+//- 								a(href="#") 
+//- 							li
+//- 								a(href="#") 
+//- 					.phone-wrapper
+//- 						em.mdi.mdi-phone
+//- 						span 0898 997 456
+//- 					.search-wrapper
+//- 						em.mdi.mdi-magnify
+//- 		.mobile-wrapper
+
 header
-	.container.flex-space
-		.header-wrapper-left
-			.nav-brand
+	.container-fuild
+		.header-container
+			<!-- Nút điều khiển menu mobile -->
+			.header-container__toggle-menu
+			<!-- Logo Đúc Nam Ninh -->
+			.header-container__logo
 				a(href="index.html")
 					img(src="./img/logo-header.png", alt="")
-		.header-wrapper-right
-			.wrapper-top.flex-end
-				.mobile-toggle
-					em.lnr.lnr-menu
-			.wrapper-bottom
-				ul.nav-menu-primary
-					li
-						a(href="about.html") GIỚI THIỆU
-					li
-						a(href="project.html") DỰ ÁN
-					li
-						a(href="news.html") TIN TỨC
-					li
-						a(href="active.html") THƯ VIỆN
-					li
-						a(href="recruitment.html") TUYỂN DỤNG
-					li
-						a(href="contact.html") LIÊN HỆ
-					.language-wrapper
-						.language-toggle
-							.card_img_language
-								.img
-									img(src="./img/language.png", alt="")
-							//- em.lnr.lnr-chevron-down
-						ul.language-list
-							li
-								a(href="#") 
-							li
-								a(href="#") 
-					.phone-wrapper
-						em.mdi.mdi-phone
-						span 0898 997 456
-					.search-wrapper
-						em.mdi.mdi-magnify
-		.mobile-wrapper
+			<!-- Language mobile -->
+			#div-mobile
+			<!-- Main menu -->
+			.header-container__main-nav
+				ul.nav-list
+					li.nav-item
+						a.nav-link(href="") GIỚI THIỆU
+					li.nav-item
+						a.nav-link(href="") DỰ ÁN
+					li.nav-item
+						a.nav-link(href="") TIN TỨC
+					li.nav-item
+						a.nav-link(href="") THƯ VIỆN
+					li.nav-item
+						a.nav-link(href="") TUYỂN DỤNG
+					li.nav-item
+						a.nav-link(href="") LIÊN HỆ
+				#language-desktop
+					.language.dropdown
+						button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+							a(href="")
+								img(src="./img/language.png", alt="")
+						.dropdown-menu(aria-labelledby='dropdownMenuButton')
+							//- a.dropdown-item(href='#')
+							//- 	img(src="./assets/icons/en.gif", alt="") 
+							//- 	span EN
+							//- a.dropdown-item(href="")
+							//- 	img(src="./assets/icons/vn.gif", alt="") 
+							//- 	span VN
+				.phone-wrapper
+					em.mdi.mdi-phone
+					span 0898 997 456
+				#search__desktop
+					a.search.btn.btn__search(data-fancybox data-animation-duration="700" data-src="#searchfancybox" href="javascript:;")
+						em.material-icons search
+						
