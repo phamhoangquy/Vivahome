@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'THƯ VIỆN'
+	- var bodyClass = 'video-page'
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/video/index.pug
+	include ../components/pagination/index.pug
