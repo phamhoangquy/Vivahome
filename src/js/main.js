@@ -6,12 +6,10 @@ $(document).ready(function() {
     toggleMenuMobile();
     moveNav();
     moveSelect();
-    // mappingMenu();
-    // mappingContact();
-    // mappingSearch();
-    // setTimeout(() => {
-    //     $('#l_0').trigger("click")
-    // }, 500);
+    projectDetailSlide();
+    setTimeout(() => {
+        $('#l_0').trigger("click")
+    }, 500);
 });
 $(window).resize(function() {
         if ($(window).width() <= 1024) {
@@ -284,7 +282,28 @@ function swiperInit() {
 
 }
 
+// Slide project-detail
+function projectDetailSlide() {
+    var pgalleryTop = new Swiper(".project_detail .gallery-top", {
+        // spaceBetween: 10,
+    });
+    var pgalleryThumbs = new Swiper(".project_detail .gallery-thumbs", {
+        initialSlide: 1,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        slideToClickedSlide: true,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".project_detail_slide_gallery .nav-arrow-prev",
+            prevEl: ".project_detail_slide_gallery .nav-arrow-next",
+        },
+    });
 
+    if ($("section").hasClass("project_detail")) {
+        pgalleryTop.controller.control = pgalleryThumbs;
+        pgalleryThumbs.controller.control = pgalleryTop;
+    }
+}
 // function toggleMobileMenu() {
 //     $(".mobile-toggle").on("click", function() {
 //         $(".mobile-wrapper").toggleClass("active");
