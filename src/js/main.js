@@ -21,7 +21,6 @@ $(window).resize(function() {
             $('.language').appendTo('.nav-item #language-desktop');
             $('.search').appendTo('.nav-item #search-desktop');
         }
-
     })
     //Toggle menu mobile
 const toggleMenuMobile = () => {
