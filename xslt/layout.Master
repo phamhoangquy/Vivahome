@@ -132,7 +132,7 @@
                         </div>
                     </div>
                 </footer>
-                <div id="back-to-top"><img src="./img/icon_back_to_top.png" alt="" srcset=""></div>
+                <div id="back-to-top"><img src="/Data/Sites/1/skins/default/images/icon_back_to_top.png" alt="" srcset=""></div>
                 <div class="searchbox" id="searchfancybox" style="display: none;">
                     <div class="container">
                         <div class="content">
