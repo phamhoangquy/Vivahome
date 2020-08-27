@@ -4,7 +4,7 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<section class="video-active">
+		<section class="block_video">
 			<div class="container">
 				<div class="row">
 					<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
@@ -13,11 +13,10 @@
 		</section>
 	</xsl:template>
 	<xsl:template match="News">
-		<div class="col-12 col-md-6 col-lg-4">
+		<div class="col-12 col-md-6 col-lg-3">
 			<div class="figure-media">
 				<div class="figure-image media-play">
 					<div class="wrapper">
-
 						<a>
 							<xsl:attribute name="data-fancybox">
 								<xsl:text>gallery-</xsl:text>
@@ -39,14 +38,22 @@
 							</img>
 						</a>
 						<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
-
 					</div>
 					<div class="caption">
-						<div class="icon"><img src="/Data/Sites/1/skins/default/img/play-icon.png" alt=""/>
+						<div class="icon"><img src="/Data/Sites/1/skins/default/images/video/play-icon.png" alt=""/>
 						</div>
-						<div class="text">
+					</div>
+				</div>
+				<div class="content_video">
+					<div class="bottom-wrapper-news-detail">
+						<time>
+							<xsl:value-of disable-output-escaping="yes" select="CreatedDate"></xsl:value-of>
+						</time>
+					</div>
+					<div class="title_video">
+						<a href="">
 							<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -66,14 +73,13 @@
 				<xsl:attribute name="Title">
 					<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 				</xsl:attribute>
-
 				<img>
-				<xsl:attribute name="src">
-					<xsl:value-of select="ImageUrl"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:attribute name="alt">
-					<xsl:value-of select="Title"></xsl:value-of>
-				</xsl:attribute>
+					<xsl:attribute name="src">
+						<xsl:value-of select="ImageUrl"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:attribute name="alt">
+						<xsl:value-of select="Title"></xsl:value-of>
+					</xsl:attribute>
 				</img>
 			</a>
 		</xsl:if>

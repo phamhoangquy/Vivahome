@@ -17,21 +17,23 @@
 	</xsl:template>
 	<xsl:template match="Banner">
 		<div class="swiper-slide">
-			<div class="wrapper"><a>
+			<div class="wrapper">
+				<a>
 					<xsl:if test="Url !=''">
 						<xsl:attribute name="href">
 							<xsl:value-of select="Url"></xsl:value-of>
 						</xsl:attribute>
 					</xsl:if>
 					<img>
-					<xsl:attribute name="src">
-						<xsl:value-of select="ImageUrl"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="alt">
-						<xsl:value-of select="Title"></xsl:value-of>
-					</xsl:attribute>
+						<xsl:attribute name="src">
+							<xsl:value-of select="ImageUrl"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="alt">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
 					</img>
-				</a></div>
+				</a>
+			</div>
 			<div class="caption">
 				<h2 class="title-caption">
 					<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>

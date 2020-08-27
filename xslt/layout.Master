@@ -46,8 +46,8 @@
             <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
             <div id="wrapper">
                 <header>
-                    <div class="container-fuild">
-                        <div class="header-container">
+                    <div class="container flex-space">
+                        <div class="header-container flex-space">
                             <!-- Nút điều khiển menu mobile -->
                             <div class="header-container__toggle-menu"></div>
                             <!-- Logo Đúc Nam Ninh -->

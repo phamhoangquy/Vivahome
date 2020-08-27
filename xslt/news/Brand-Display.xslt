@@ -6,19 +6,20 @@
 	<xsl:template match="/">
 		<section class="brand-display">
 			<div class="container">
-				<div class="head-title line">
-					<h2>
-						<xsl:value-of disable-output-escaping="yes" select="/NewsList/ModuleTitle"></xsl:value-of>
-					</h2>
-				</div>
 				<div class="brand-swiper-wrapper">
-				<div class="nav-arrow-prev"><img src="/Data/Sites/1/skins/default/img/home/brand/pre.png" alt="" /></div>
-				<div class="nav-arrow-next"><img src="/Data/Sites/1/skins/default/img/home/brand/next.png" alt="" /></div>
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<xsl:apply-templates select="/NewsList/News"></xsl:apply-templates>
-
+					<div class="block_title_brand">
+						<div class="head-title"> 
+							<h1><xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of></h1>
 						</div>
+					</div>
+					<div class="brand-home-swipper-wrapper">
+						<div class="nav-arrow-prev"><em class="mdi mdi-arrow-left"></em></div>
+						<div class="nav-arrow-next"><em class="mdi mdi-arrow-right"></em></div>
+					</div>
+				</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<xsl:apply-templates select="/ZoneList/Zone/News[1]"></xsl:apply-templates>
 					</div>
 				</div>
 			</div>
@@ -35,16 +36,15 @@
 						<xsl:value-of select="Title"></xsl:value-of>
 					</xsl:attribute>
 					<img>
-					<xsl:attribute name="src">
-						<xsl:value-of select="ImageUrl"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="alt">
-						<xsl:value-of select="Title"></xsl:value-of>
-					</xsl:attribute>
+						<xsl:attribute name="src">
+							<xsl:value-of select="ImageUrl"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="alt">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
 					</img>
 				</a>
 			</div>
 		</div>
 	</xsl:template>
-
 </xsl:stylesheet>

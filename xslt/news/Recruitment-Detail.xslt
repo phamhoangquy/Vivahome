@@ -94,7 +94,9 @@
 			<li>
 				<div class="title_hr_detail_right"><a href=""><xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of></a></div>
 				<div class="date">
-					<time><xsl:value-of disable-output-escaping="yes" select="CreatedDate"></xsl:value-of></time>
+					<time>
+						<xsl:value-of disable-output-escaping="yes" select="CreatedDate"></xsl:value-of>
+					</time>
 				</div>
 			</li>
 		</ul>
