@@ -3,26 +3,28 @@
 <xsl:output method="html" indent="yes"/>
 
 	<xsl:template match="/">
-		<div class="container">
-			<div class="block_title_project">
-				<div class="head-title">
-					<h1><xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of></h1>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="project-swiper-wrapper">
-						<div class="nav-arrow-prev"><em class="mdi mdi-arrow-left"></em></div>
-						<div class="nav-arrow-next"><em class="mdi mdi-arrow-right"></em></div>
+		<section class="block_project">
+			<div class="container">
+				<div class="block_title_project">
+					<div class="head-title">
+						<h1><xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of></h1>
 					</div>
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<xsl:apply-templates select="/ZoneList/Zone/News[1]"></xsl:apply-templates>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="project-swiper-wrapper">
+							<div class="nav-arrow-prev"><em class="mdi mdi-arrow-left"></em></div>
+							<div class="nav-arrow-next"><em class="mdi mdi-arrow-right"></em></div>
+						</div>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<xsl:apply-templates select="/ZoneList/Zone/News[1]"></xsl:apply-templates>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	</xsl:template>
 	<xsl:template match="News">
 		<div class="swiper-slide">

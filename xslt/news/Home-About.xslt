@@ -89,7 +89,7 @@
 			</span>
 		</li>
 	</xsl:template>
-	<xsl:template match="News" mode='about-1'>
+	<!-- <xsl:template match="News" mode='about-1'>
 		<xsl:if test="position()=1">
 			<li>
 				<h3><xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of></h3>
@@ -108,7 +108,7 @@
 				<p><xsl:value-of disable-output-escaping="yes" select="FullContent"></xsl:value-of></p>
 			</li>
 		</xsl:if>
-	</xsl:template>
+	</xsl:template> -->
 </xsl:stylesheet>
  
 
