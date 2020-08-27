@@ -60,10 +60,7 @@
                             <div class="header-container__main-nav">
                                 <portal:modulewrapper id="mdl141" runat="server" configuremoduleid="141" />
                                 <div id="language-desktop">
-                                    <div class="language dropdown">
-                                        <button class="dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href=""><img src="./img/language.png" alt=""></a></button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
-                                    </div>
+                                    <portal:modulewrapper id="mdl175" runat="server" configuremoduleid="175" />
                                 </div>
                                 <div class="phone-wrapper">
                                     <portal:modulewrapper id="mdl139" runat="server" configuremoduleid="139" />

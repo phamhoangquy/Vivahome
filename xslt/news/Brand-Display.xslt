@@ -8,7 +8,7 @@
 			<div class="brand-swiper-wrapper">
 				<div class="block_title_brand">
 					<div class="head-title"> 
-						<h1><xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of></h1>
+						<h1><xsl:value-of select="/ZoneList/ModuleTitle" disable-output-escaping="yes"></xsl:value-of></h1>
 					</div>
 				</div>
 				<div class="brand-home-swipper-wrapper">
@@ -18,7 +18,7 @@
 			</div>
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<xsl:apply-templates select="/ZoneList/Zone/News[1]"></xsl:apply-templates>
+					<xsl:apply-templates select="/ZoneList/Zone/News"></xsl:apply-templates>
 				</div>
 			</div>
 		</div>
