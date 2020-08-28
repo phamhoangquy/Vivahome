@@ -2,7 +2,7 @@
 	padding: 55px 0 0 0
 	.block_title_project-detail
 		padding-bottom: 35px
-		h1
+		h2
 			font-size: 24px
 			color: #005c90
 	// Slide gallery
@@ -109,3 +109,467 @@
 						height: auto
 						max-height: 100px
 	// End nút slide
+
+	.content_slide_project-detail
+		padding: 35px 0 0 0
+		p
+			font-size: 14px
+			padding-bottom: 20px
+	.table_project-detail
+		table
+			background: #f7fafc
+			width: 100%
+			tr
+				td
+					height: 55px
+					border-bottom: 1px solid #ffffff
+					padding-left: 20px
+					strong
+						color: #005c90
+
+// section 2
+.project-detail-2
+	padding: 50px 0 0 0
+	.block_title_project-detail
+		h2
+			font-size: 24px
+			color: #005c90
+	.caption_project-detail-2
+		padding: 20px 0 40px 0
+	.card_img_project-detail-2
+		border: 1px solid #e0e0e0
+
+
+// section 3
+.project-detail-3
+	padding: 80px 0 0 0
+	.background
+		position: relative
+		.img 
+			position: absolute
+			top: 150px
+			left: -125px
+			pointer-events: none
+			img
+				width: 500px
+				@media screen and ( max-width: 576px )
+					width: 300px
+				@media screen and ( max-width: 1024px )
+					display: none
+	.content_project-detail-2
+		background-image: linear-gradient(#00598a, #b2293c)
+		padding: 40px
+		width: 100%
+		height: 545px
+		p
+			color: #ffffff
+			font-size: 14px
+			padding-bottom: 20px
+	.traffic
+		// border-top: 1px solid #e0e0e0
+		// border-bottom: 1px solid #e0e0e0
+		// border-left: 1px solid #e0e0e0
+	.icon_project-detail-2
+		display: flex
+		justify-content: center
+		align-items: center
+		padding-top: 30px
+	.title_project-detail-2
+		text-align: center
+		padding-top: 15px
+		h1
+			font-size: 24px
+			color: #005c90
+	.img_project-detail-2
+		padding-top: 30px
+
+// section 4
+.project-detail-4
+	padding-top: 150px
+	.card_title_project-detail-4
+		h2
+			font-size: 24px
+			color: #005c90
+// section 5
+.project-detail-5
+	padding: 50px 0 0 0
+	.title_project-detail-5
+		padding-bottom: 25px
+		h2
+			text-transform: uppercase
+			font-size: 24px
+			color: #005c90
+	.news-project-detail
+		height: auto
+		// background: #ffffff
+		.wrapper
+			margin-left: 25px
+			.img
+				img
+					width: 100%
+			.content
+				.title_news
+					padding-top: 25px
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 2
+					-o-text-overflow: ellipsis
+					display: -webkit-box
+					overflow: hidden
+					text-overflow: ellipsi
+					a
+						font-size: 18px
+						color: #333333
+						font-weight: 700
+				.title_zone_news
+					padding-top: 20px
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 3
+					-o-text-overflow: ellipsis
+					display: -webkit-box
+					overflow: hidden
+					text-overflow: ellipsis
+					p
+						font-size: 14px
+						color: #333333
+		.bottom-wrapper-news-detail
+			position: absolute
+			z-index: 2
+			left: 0
+			top: 10px
+			-webkit-writing-mode: vertical-rl
+			time
+				font-size: 13px
+				color: #7a7a7a
+				position: relative
+				padding-top: 15px
+				// padding-left: 20px
+				// writing-mode: vertical-rl
+				&::before
+					content: ''
+					width: 13px
+					height: 5px
+					transform: rotateZ(270deg)
+					background: #c80916
+					position: absolute
+					top: 0
+					// transform: translateY(-50%)
+					left: 0
+	.col-lg-12
+		display: flex
+		justify-content: center
+		align-items: center
+	.btn-view
+		margin-top: 30px
+		background: #ed202e
+		height: 35px
+		width: 190px
+		text-align: center
+		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)
+		@media screen and ( max-width: 1024px )
+			width: 80%
+			margin-top: 10px
+		@media screen and ( max-width: 767px )
+			width: 80%
+			margin-top: 10px
+		
+		a
+			color: #ffffff
+			font-size: 18px
+			text-transform: uppercase
+			line-height: 35px
+			@media screen and ( max-width: 1024px )
+				font-size: 14px
+			@media screen and ( max-width: 767px )
+				font-size: 12px
+			
+		em
+			color: #ffffff
+			font-size: 18px
+			@media screen and ( max-width: 1024px )
+				font-size: 14px
+			@media screen and ( max-width: 767px )
+				font-size: 12px
+
+// section 6
+.project-detail-6
+	padding: 70px 0 0 0
+	.left_project-detail
+		.title-wrapper
+			h2
+				text-transform: uppercase
+				font-size: 24px
+				color: #005c90
+		ul
+			list-style: none
+			padding: 0
+			li
+				.title
+					padding: 10px 20px
+					a
+						text-transform: uppercase
+						font-size: 16px
+						color: #005c90
+					&:hover
+						background: #005c90
+						border-right: 3px solid #ef3b39
+						cursor: pointer
+						a
+							color: #ffffff
+							font-size: 16px
+							font-weight: 600
+	.project-swiper-wrapper
+		position: relative
+		// @media screen and ( max-width: 576px )
+		// 	justify-content: center
+		// 	margin-top: 30px
+	.nav-arrow-prev,.nav-arrow-next
+		position: absolute
+		width: 40px
+		height: 40px
+		top: 300px
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 2px solid #014b74
+		color: #014b74
+		transition: .3s all  ease-in-out
+		@media screen and ( max-width: 400px )
+			top: 40%
+			
+		&:hover,&:focus
+			background: #ed202e
+			border: none
+			cursor: pointer
+			em
+				color: #ffffff
+				
+		em
+			transition: .3s all  ease-in-out
+			font-size: 18px
+	.nav-arrow-next
+		right: -60px
+		@media screen and ( max-width: 1439px)
+			right: -45px
+		@media screen and ( max-width: 1350px)
+			right: 0
+			top: 150px
+		@media screen and ( max-width: 767px)
+			right: 0
+		@media screen and ( max-width: 576px)
+			right: 0
+			top: 160px
+	.nav-arrow-prev
+		left: -60px
+		@media screen and ( max-width: 1439px)
+			left: -45px
+		@media screen and ( max-width: 1350px)
+			left: 0
+			top: 150px
+		@media screen and ( max-width: 767px)
+			left: 0
+		@media screen and ( max-width: 576px)
+			left: 0
+			top: 160px
+	.swiper-container
+		margin: 0
+		@media screen and ( max-width: 1350px)
+			margin: 0 50px
+	.swiper-slide
+		.wrapper
+			position: relative
+			@media screen and ( max-width: 767px )
+				.img
+					width: 100%
+					height: 350px
+					img
+						width: 100%
+						height: 100%
+						object-fit: cover
+			.content_project
+				position: absolute
+				z-index: 2
+				bottom: 0
+				left: 0
+				width: 425px
+				height: 70px
+				background: rgba(#16577c,.9)
+				padding: 0 25px 0 25px
+				text-align: center
+				border-left: 5px solid #ed202e
+				@media screen and ( max-width: 1024px )
+					width: 300px
+					height: 200px
+					background: rgba(#16577c,.7)
+				@media screen and ( max-width: 576px )
+					width: 100%
+					height: 200px
+					background: rgba(#16577c,.7)
+				.title
+					padding: 23px
+					@media screen and ( max-width: 1024px )
+						padding-top: 20px
+					@media screen and ( max-width: 767px )
+						padding-top: 20px
+					
+					h3
+						color: #fff
+						font-size: 16px
+						text-transform: uppercase
+						@media screen and ( max-width: 1024px )
+							font-size: 15px
+						@media screen and ( max-width: 767px )
+							font-size: 14px
+						
+				// .text
+				// 	padding-top: 20px
+				// 	-webkit-box-orient: vertical
+				// 	-webkit-line-clamp: 4
+				// 	-o-text-overflow: ellipsis
+				// 	display: -webkit-box
+				// 	overflow: hidden
+				// 	text-overflow: ellipsi
+				// 	@media screen and ( max-width: 1024px )
+				// 		padding-top: 10px
+				// 	@media screen and ( max-width: 767px )
+				// 		padding-top: 10px
+					
+				// 	p
+				// 		font-size: 14px
+				// 		color: #ffffff
+				// 		@media screen and ( max-width: 1024px )
+				// 			font-size: 14px
+				// 		@media screen and ( max-width: 767px )
+				// 			font-size: 12px
+
+// section 7
+.project-detail-7
+	background-image: url('../img/project-detail/bg_project-detail-7.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding: 135px 0 135px 0
+	margin-top: 70px
+	&::before
+		background: rgba(34,34,34,.4)
+	.left_project-detail-7
+		border-right: 1px solid #ffffff
+		.title
+			padding-bottom: 24px
+			h2
+				font-size: 24px
+				color: #ffffff
+				text-transform: uppercase
+		.card-body
+			ul
+				list-style: none
+				padding: 0
+				li
+					color: #ffffff
+					padding-bottom: 15px
+					p
+						padding-top: 15px
+	.text
+		padding-bottom: 20px
+		p
+			font-size: 24px
+			text-transform: uppercase
+			color: #fff
+			font-weight: 600
+		@media screen and ( max-width: 576px )
+			padding-top: 30px
+	.wrap-form
+		@media screen and(max-width:1025px)
+			margin: 0
+			padding: 0 10px
+		.frm-btnwrap
+			position: absolute
+			bottom: 20px
+			left: 15px
+			clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)
+			// @media screen and(max-width:1025px)
+			// 	margin: 0 !important
+			@media screen and(max-width:767px)
+				position: static
+				display: block
+				clip-path: none
+			.frm-btn
+				input
+					width: 160px
+					height: 40px
+					color: #ffffff
+					background: #ed202e
+					cursor: pointer
+					font-size: 16px
+					font-weight: 400
+					text-align: center
+					border: none
+					// margin-right: 10px
+					&:nth-last-child(2)
+						display: none
+					@media screen and ( max-width:1024px  )
+						input 
+							padding: 0 15px
+		.form-group
+			margin: 5px 0 20px 0
+			span
+				color: #ffffff
+				font-size: 13px
+				&.fa-exclamation-triangle
+					color: firebrick
+			input,textarea
+				padding-left: 20px
+				border-bottom: 1px solid #f3f3f3
+				border-top: none
+				border-right: none
+				border-left: none
+				height: 42px
+				width: 100%
+				color: #ffffff
+				background: none
+				transition: .3s all ease-in-out
+				&::placeholder
+					color: #78a7c3
+				&:focus
+					outline: none
+					box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+			label
+				color: #ffffff
+				font-size: 14px
+				font-weight: 400
+				margin-bottom: 5px
+				font-weight: 600
+			textarea
+				height: 8em
+				padding: 10px 0 0 20px
+		// .frm-captcha
+		// 	display: flex
+		// 	@media screen and ( max-width: 576px )
+		// 		display: flex
+		// 		flex-wrap: wrap
+		// 	.frm-captcha-input
+		// 		order: 2
+		// 		@media screen and ( max-width: 1200px )
+		// 			display: flex
+		// 			justify-content: space-between
+		// 			align-items: center
+		// 			padding-left: 20px
+		// 			width: 40%
+		// 		@media screen and ( max-width: 1024px )
+		// 			display: flex
+		// 			justify-content: space-between
+		// 			align-items: center
+		// 			padding-left: 20px
+		// 		@media screen and ( max-width: 768px )
+		// 			display: flex
+		// 			justify-content: space-between
+		// 			align-items: center
+		// 			padding-left: 20px
+				
+		// 		@media screen and ( max-width: 576px )
+		// 			display: flex
+		// 			justify-content: space-between
+		// 			align-items: center
+		// 			padding-left: 20px
+		// 			width: 100%
+		// 		@media screen and ( max-width: 576px )
+		// 			padding-top: 30px

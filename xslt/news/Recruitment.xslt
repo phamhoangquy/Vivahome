@@ -87,18 +87,18 @@ xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
 			</div>
 		</div>
 		<div class="col-lg-6 hr">
-			<!-- <div class="background">
+			<div class="background">
 				<div class="img">
 					<img>
 						<xsl:attribute name="src">
-							<xsl:value-of select="ImageUrl"></xsl:value-of>
+							<xsl:value-of select="ThumbnailUrl"></xsl:value-of>
 						</xsl:attribute>
 						<xsl:attribute name="alt">
 							<xsl:value-of select="Title"></xsl:value-of>
 						</xsl:attribute>
 					</img>
 				</div>
-			</div> -->
+			</div>
 			<div class="content_hr">
 				<div class="card_title_hr">
 					<h2>

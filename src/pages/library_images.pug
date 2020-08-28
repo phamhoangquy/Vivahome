@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'THƯ VIỆN ẢNH'
+	- var bodyClass = 'library_images-page'
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/video/library_images/index.pug
+	include ../components/pagination/index.pug

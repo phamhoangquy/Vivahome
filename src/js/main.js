@@ -279,7 +279,59 @@ function swiperInit() {
         },
 
     });
+    var projectDetailSwiper = new Swiper(".project-detai-5 .swiper-container", {
+        // Optional parameters
+        speed: 1000,
+        autoplay: {
+            delay: 2000
+        },
+        navigation: {
+            nextEl: '.project-detai-5 .nav-arrow-next',
+            prevEl: '.project-detai-5 .nav-arrow-prev',
+        },
+        breakpointsInverse: true,
+        spaceBetween: 30,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
 
+            },
+            480: {
+                slidesPerView: 2,
+
+            },
+            768: {
+                slidesPerView: 2,
+
+            },
+            1025: {
+                slidesPerView: 3,
+
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+            1440: {
+                slidesPerView: 3,
+            },
+            1600: {
+                slidesPerView: 3,
+            },
+        },
+    });
+    var projectDetail6Swiper = new Swiper(".project-detail-6 .swiper-container", {
+        // Optional parameters
+        speed: 1205,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 3000
+        },
+        pagination: {
+            el: ".project-detail-6-pagination",
+            type: "bullets",
+            clickable: "true"
+        }
+    });
 }
 
 // Slide project-detail

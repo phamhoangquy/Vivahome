@@ -3,6 +3,10 @@
         font-size: 36px
         color: #005c90
         text-transform: uppercase
+    h2
+        font-size: 36px
+        color: #005c90
+        text-transform: uppercase
 
 .head-menu
     display: flex
@@ -41,3 +45,34 @@
             justify-content: flex-start
             li 
                 text-align: center
+
+.block_title_library
+    display: flex
+    justify-content: space-between
+    padding-bottom: 35px
+    .head-title
+        h1
+            font-size: 34px
+    @media screen and ( max-width: 576px )
+        .head-title
+            h1
+                font-size: 20px
+    .head-title-zone
+        display: flex
+        justify-content: center
+        align-items: center
+        ul
+            list-style: none
+            padding: 0
+            display: flex
+            li
+                padding-left: 10px
+                &:nth-child(1)
+                    border-right: 1px solid #e0e0e0
+                    padding-right: 10px
+                a
+                    color: #666666
+                    font-size: 16px
+                    &:hover
+                        color: #ed202e
+                        border-bottom: 1px solid #ed202e
