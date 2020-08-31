@@ -52,7 +52,7 @@
 						<div class="form_apply_hr_detail">
 							<div class="apply-form">
 								<div class="btn button-apply">
-									<a href="javascript:void(0)">Ứng tuyển ngay
+									<a href="javascript:void(0)" data-fancybox="modal-apply" data-modal="true" data-src="#form-apply">Ứng tuyển ngay
 									</a>
 								</div>
 								<div class="btn button-download">
@@ -65,6 +65,19 @@
 									</a>
 								</div>
 							</div>
+
+							<!-- form apply popup  -->
+							<div class="modal-wrapper modal-apply" id="form-apply" style="display: none">
+								<div class="button-close" data-fancybox-close=""><em class="mdi mdi-close"></em></div>
+								<div class="form-apply">
+									<iframe>
+										<xsl:attribute name="src">
+											<xsl:value-of select="/NewsDetail/ApplyUrl"></xsl:value-of>
+										</xsl:attribute>
+									</iframe>
+								</div>
+							</div>
+							<!-- end form apply popup  -->
 						</div>
 
 						<div class="right-hr-detail">

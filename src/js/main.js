@@ -7,6 +7,7 @@ $(document).ready(function() {
     moveNav();
     moveSelect();
     projectDetailSlide();
+    // toggleApplyForm();
     setTimeout(() => {
         $('#l_0').trigger("click")
     }, 500);
@@ -77,6 +78,12 @@ function linkAbout() {
                 }
             );
         } // End if
+    });
+}
+
+function toggleApplyForm() {
+    $(".apply-form .button-apply a").on("click", function() {
+        $(".form-apply").slideToggle();
     });
 }
 

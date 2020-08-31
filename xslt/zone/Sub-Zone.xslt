@@ -4,17 +4,19 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<section class="head-title-zone">
+		<section class="card-title-library-list">
 			<div class="container">
-				<div class="head-title ">
-					<h2>
-						<xsl:value-of disable-output-escaping="yes" select="/ZoneList/RootTitle"></xsl:value-of>
-					</h2>
-				</div>
-				<div class="title">
-					<ul>
-						<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
-					</ul>
+				<div class="block_title_library">
+					<div class="head-title ">
+						<h1>
+							<xsl:value-of disable-output-escaping="yes" select="/ZoneList/RootTitle"></xsl:value-of>
+						</h1>
+					</div>
+					<div class="head-title-zone">
+						<ul>
+							<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>

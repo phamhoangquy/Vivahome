@@ -49,7 +49,7 @@
 						<p><xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of></p>
 					</div>
 					<div class="btn-view">
-						<a>
+						<!-- <a>
 							<xsl:attribute name="href">
 								<xsl:value-of select="Url"></xsl:value-of>
 							</xsl:attribute>
@@ -60,7 +60,8 @@
 								<xsl:value-of select="Target"></xsl:value-of>
 							</xsl:attribute>
 							chi tiết
-						</a>
+						</a> -->
+						<a>chi tiết</a>
 						<em class="mdi mdi-arrow-right"></em>
 					</div>
 				</div>

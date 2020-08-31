@@ -29,15 +29,15 @@
 								<xsl:value-of select="Title"></xsl:value-of>
 							</xsl:attribute>
 							<img>
-							<xsl:attribute name="src">
-								<xsl:value-of select="ImageUrl"></xsl:value-of>
-							</xsl:attribute>
-							<xsl:attribute name="alt">
-								<xsl:value-of select="Title"></xsl:value-of>
-							</xsl:attribute>
+								<xsl:attribute name="src">
+									<xsl:value-of select="ImageUrl"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:attribute name="alt">
+									<xsl:value-of select="Title"></xsl:value-of>
+								</xsl:attribute>
 							</img>
 						</a>
-						<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
+						<!-- <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of> -->
 					</div>
 					<div class="caption">
 						<div class="icon"><img src="/Data/Sites/1/skins/default/images/video/play-icon.png" alt=""/>
