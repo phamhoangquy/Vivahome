@@ -9,17 +9,17 @@
 
 	<xsl:template match="Zone">
 		<xsl:if test="position()=1" >
-			<section class="about" id='section-about-1'>
+			<section class="about-viva-1" id='section-about-1'>
 				<div class="container">
-						<div class="head-menu">
-							<ul class='link-to-about-section'>
-								<li> <a href="#section-about-1">Giới thiệu</a></li>
-								<li> <a href="#section-about-2">Tầm nhìn &amp; Sứ mệnh</a></li>
-								<li> <a href="#section-about-3">Giá trị cốt lõi</a></li>
-								<li> <a href="#section-about-4">Giải thưởng</a></li>
-								<li> <a href="#section-about-5">Tại sao chọn</a></li>
-							</ul>
-						</div>
+					<div class="head-menu">
+						<ul class='link-to-about-section'>
+							<li> <a href="#section-about-1">về viva home</a></li>
+							<li> <a href="#section-about-2">tầm nhìn</a></li>
+							<li> <a href="#section-about-3">sứ mệnh</a></li>
+							<li> <a href="#section-about-4">giá trị cốt lõi</a></li>
+							<li> <a href="#section-about-5">mục tiêu chiến lượt</a></li>
+						</ul>
+					</div>
 					<div class="head-title line">
 						<h2>
 							<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
@@ -33,7 +33,7 @@
 			</section>
 		</xsl:if>
 		<xsl:if test="position()=2">
-			<section class="vision-mission" id='section-about-2'>
+			<section class="about-viva-2" id='section-about-2'>
 				<div class="container">
 					<div class="head-title line">
 						<h2>
@@ -50,7 +50,7 @@
 			</section>
 		</xsl:if>
 		<xsl:if test="position()=3">
-			<section class="value" id='section-about-3'>
+			<section class="about-viva-3" id='section-about-3'>
 				<div class="container">
 					<div class="head-title line">
 						<h2>
@@ -63,7 +63,7 @@
 				</div>
 			</section>
 		</xsl:if>
-		<xsl:if test="position()=4">
+		<!-- <xsl:if test="position()=4">
 			<section class="prize" id='section-about-4'>
 				<div class="container">
 					<div class="head-title line">
@@ -94,7 +94,7 @@
 					<xsl:apply-templates select="News" mode='News-5'></xsl:apply-templates>
 				</div>
 			</section>
-		</xsl:if>
+		</xsl:if> -->
 
 	</xsl:template>
 	<xsl:template match="News" mode='News-1'>
@@ -112,14 +112,11 @@
 			</div>
 			<div class="block_list">
 				<ul>
-
 					<xsl:apply-templates select="NewsAttributes"></xsl:apply-templates>
 				</ul>
 			</div>
 		</div>
 	</xsl:template>
-
-
 	<xsl:template match="News" mode='News-2'>
 		<div class="card_img">
 			<div class="img">
@@ -229,6 +226,5 @@
 				<xsl:value-of disable-output-escaping="yes" select="Content"></xsl:value-of>
 			</span>
 		</li>
-
 	</xsl:template>
 </xsl:stylesheet>

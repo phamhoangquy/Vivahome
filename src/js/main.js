@@ -7,6 +7,7 @@ $(document).ready(function() {
     moveNav();
     moveSelect();
     projectDetailSlide();
+    fancyboxModal();
     // toggleApplyForm();
     setTimeout(() => {
         $('#l_0').trigger("click")
@@ -78,6 +79,22 @@ function linkAbout() {
                 }
             );
         } // End if
+    });
+}
+
+function fancyboxModal() {
+    $(".button-apply a").click(function(e) {
+        e.preventDefault();
+        $.fancybox.open({
+            src: '#form-apply',
+            type: 'inline',
+            opts: {
+                afterShow: function(instance, current) {
+                    $(".fancybox-is-open").appendTo("main");
+                }
+            }
+        });
+        return false;
     });
 }
 
