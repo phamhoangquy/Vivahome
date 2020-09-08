@@ -192,7 +192,7 @@ xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
 				</div>
 			</div>
 		</xsl:if>
-			<xsl:if test="position()=4">
+		<xsl:if test="position()=4">
 			<div class="col-6 col-md-6 col-lg-3">
 				<div class="education">
 						<div class="card_img">
