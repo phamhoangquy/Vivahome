@@ -6,40 +6,46 @@
 		<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
 	</xsl:template>
 	<xsl:template match="Zone">
-		<xsl:if test="position()=1" >
+		<xsl:if test="position()=1">
 			<section class="head-about" id='section-about-1'>
 				<div class="container">
 					<div class="head-menu">
-						<ul class='link-to-about-section'>
-							<li> <a href="#section-about-1">về viva home</a></li>
-							<li> <a href="#section-about-1">tầm nhìn</a></li>
-							<li> <a href="#section-about-2">sứ mệnh</a></li>
-							<li> <a href="#section-about-3">giá trị cốt lõi</a></li>
-							<li> <a href="#section-about-3">Mục tiêu chiến lượt</a></li>
+						<ul> 
+							<li> <a href="">về viva home</a></li>
+							<li> <a href="">tầm nhìn</a></li>
+							<li> <a href="">sứ mệnh</a></li>
+							<li> <a href="">giá trị cốt lõi</a></li>
+							<li> <a href="">mục tiêu chiến lượt</a></li>
 						</ul>
 					</div>
 				</div>
 			</section>
 		</xsl:if>
-		<xsl:if test="position()=1" >
-			<section class="about-viva-1" id='section-about-1'>
+		<xsl:if test="position()=1">
+			<section class="about-vivahome-1" id='section-about-1'>
 				<div class="container">
 					<div class="title_about">
 						<div class="head-title">
 							<h1><xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of></h1>
 						</div>
 						<div class="text_about_viva">
-							<p><xsl:value-of disable-output-escaping="yes" select="Description"></xsl:value-of>.</p>
+							<p><xsl:value-of disable-output-escaping="yes" select="Description"></xsl:value-of></p>
 						</div>
 					</div>
+				</div>
+			</section>
+		</xsl:if>
+		<xsl:if test="position()=2">
+			<section class="about-viva-1" id='section-about-2'>
+				<div class="container">
 					<div class="row no-gutters">
 						<xsl:apply-templates select="News" mode='News-1'></xsl:apply-templates>
 					</div>
 				</div>
 			</section>
 		</xsl:if>
-		<xsl:if test="position()=2">
-			<section class="about-viva-2" id='section-about-2'>
+		<xsl:if test="position()=3">
+			<section class="about-viva-2" id='section-about-3'>
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-md-6 col-lg-4">
@@ -54,17 +60,17 @@
 				</div>
 			</section>
 		</xsl:if>
-		<xsl:if test="position()=3">
-			<section class="about-viva-3" id='section-about-3'>
+		<xsl:if test="position()=4">
+			<section class="about-viva-3" id='section-about-4'>
 				<div class="container">
 					<div class="row">
-						<xsl:apply-templates select="News[4]" mode='News-4'></xsl:apply-templates>
-						<xsl:apply-templates select="News[5]" mode='News-5'></xsl:apply-templates>
+						<xsl:apply-templates select="News" mode='News-3'></xsl:apply-templates>
 					</div>
 				</div>
 			</section>
 		</xsl:if>
 	</xsl:template>
+
 	<xsl:template match="News" mode='News-1'>
 		<div class="col-12 col-md-6 col-lg-5 bg_about bg_about">
 			<div class="card_img_about">
@@ -129,7 +135,7 @@
 			</div>
 		</div>
 	</xsl:template>
-
+	
 	<xsl:template match="News" mode='News-3'>
 		<div class="col-12 col-md-6 col-lg-6">
 			<div class="item_value_about-viva-3">
@@ -152,7 +158,25 @@
 					<p><xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of></p>
 				</div>
 			</div>
-			<!-- <div class="item_value_about-viva-3">
+		</div>
+		<div class="col-12 col-md-6 col-lg-6 bg-viva">
+			<div class="big_img_viva-3">
+				<div class="img">
+					<img>
+						<xsl:attribute name="src">
+							<xsl:value-of select="ImageUrl"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="alt">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
+					</img>
+				</div>
+			</div>
+		</div>
+	</xsl:template>
+	<!-- <xsl:template match="News" mode='News-4'>
+		<div class="col-12 col-md-6 col-lg-6">
+			<div class="item_value_about-viva-3">
 				<div class="card_img_viva-3">
 					<div class="img">
 						<img>
@@ -171,21 +195,7 @@
 				<div class="caption_about-viva-3">
 					<p><xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of></p>
 				</div>
-			</div> -->
-		</div>
-		<div class="col-12 col-md-6 col-lg-6">
-			<div class="big_img_viva-3">
-				<div class="img">
-					<img>
-						<xsl:attribute name="src">
-							<xsl:value-of select="ImageUrl"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:attribute name="alt">
-							<xsl:value-of select="Title"></xsl:value-of>
-						</xsl:attribute>
-					</img>
-				</div>
 			</div>
 		</div>
-	</xsl:template>
+	</xsl:template> -->
 </xsl:stylesheet>

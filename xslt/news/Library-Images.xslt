@@ -32,7 +32,7 @@
 	</xsl:template>
 	<xsl:template match="News" mode="News1">
 		<div class="block-item">
-			<div class="item__img">
+			<div class="item__imgg">
 				<a href="">
 					<img>
 						<xsl:attribute name="src">
@@ -128,7 +128,7 @@
 	<xsl:template match="News" mode="News4">
 	  	<div class="card_img_news_image_right">
 			<div class="block-item">
-				<div class="item__img">
+				<div class="item__imgg">
 					<a href="">
 						<img >
 							<xsl:attribute name="src">

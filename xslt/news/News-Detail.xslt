@@ -5,36 +5,34 @@
 
 	<xsl:template match="/">
 		<section class="news-detail">
-			<div class="container-custom">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-9">
-							<div class="bottom-wrapper-news-detail">
-								<time>
-									<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/CreatedDate">
-									</xsl:value-of>
-								</time>
-							</div>
-							<div class="card_title-news-detail">
-								<h1>
-									<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/Title">
-									</xsl:value-of>
-									<xsl:value-of select="/NewsDetail/EditLink" disable-output-escaping="yes">
-									</xsl:value-of>
-								</h1>
-							</div>
-							<div class="fullcontent">
-								<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/FullContent">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="bottom-wrapper-news-detail">
+							<time>
+								<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/CreatedDate">
 								</xsl:value-of>
-							</div>
+							</time>
 						</div>
-						<div class="col-lg-3">
-							<div class="right-news">
-								<div class="card-title-right">
-									<h2>Các tin khác</h2>
-								</div>
-								<xsl:apply-templates select="/NewsDetail/NewsOther"></xsl:apply-templates>
+						<div class="card_title-news-detail">
+							<h1>
+								<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/Title">
+								</xsl:value-of>
+								<xsl:value-of select="/NewsDetail/EditLink" disable-output-escaping="yes">
+								</xsl:value-of>
+							</h1>
+						</div>
+						<div class="fullcontent">
+							<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/FullContent">
+							</xsl:value-of>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="right-news">
+							<div class="card-title-right">
+								<h2>Các tin khác</h2>
 							</div>
+							<xsl:apply-templates select="/NewsDetail/NewsOther"></xsl:apply-templates>
 						</div>
 					</div>
 				</div>

@@ -9,7 +9,7 @@
 				<div class="block_title_news-list">
 					<div class="head-title">
 						<h1>
-							<h1><xsl:value-of select="/NewsList/ModuleTitle" disable-output-escaping="yes"></xsl:value-of></h1>
+							<xsl:value-of select="/NewsList/ModuleTitle" disable-output-escaping="yes"></xsl:value-of>
 						</h1>
 					</div>
 				</div>
