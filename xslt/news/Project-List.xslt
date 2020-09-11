@@ -5,30 +5,35 @@
 	<xsl:template match="/">
 		<section class="block_project-list">
 			<div class="container">
-				<xsl:apply-templates select="/ZoneList/Zone/Zone"></xsl:apply-templates>
+				<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
 			</div>
 		</section>
 	</xsl:template>
+
 	<xsl:template match="Zone">
+		<xsl:apply-templates select="Zone" mode='Sub'></xsl:apply-templates>
+	</xsl:template>
+
+	<xsl:template match="Zone" mode='Sub'>
 		<div class="row">
 			<div class="col-12 col-md-7 col-lg-8 project__item">
 				<div class="card_img_project-list">
 					<div class="img">
 						<a>
-						<xsl:attribute name="href">
-							<xsl:value-of select="Url"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:attribute name="title">
-							<xsl:value-of select="Title"></xsl:value-of>
-						</xsl:attribute>
-						<img>
-							<xsl:attribute name="src">
-								<xsl:value-of select="ImageUrl"></xsl:value-of>
+							<xsl:attribute name="href">
+								<xsl:value-of select="Url"></xsl:value-of>
 							</xsl:attribute>
-							<xsl:attribute name="alt">
+							<xsl:attribute name="title">
 								<xsl:value-of select="Title"></xsl:value-of>
 							</xsl:attribute>
-						</img>
+							<img>
+								<xsl:attribute name="src">
+									<xsl:value-of select="ImageUrl"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:attribute name="alt">
+									<xsl:value-of select="Title"></xsl:value-of>
+								</xsl:attribute>
+							</img>
 						</a>
 					</div>
 				</div>
