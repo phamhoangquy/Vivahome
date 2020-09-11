@@ -8,6 +8,7 @@ $(document).ready(function() {
     moveSelect();
     projectDetailSlide();
     fancyboxModal();
+    linkAbout();
     // toggleApplyForm();
     setTimeout(() => {
         $('#l_0').trigger("click")

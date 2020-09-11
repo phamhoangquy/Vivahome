@@ -76,3 +76,26 @@
                     &:hover
                         color: #ed202e
                         border-bottom: 1px solid #ed202e
+.tab-wrapper
+    .tab-item
+        display: none
+        &.active
+            display: block
+
+.link-to-section
+    ul
+        list-style-type: none
+        padding: 0
+        li
+            display: inline-block
+            &:not(:last-child)
+                margin-right: 10px
+            &.active
+                a
+                    color: #0b6528
+                    text-decoration: underline
+            a
+                display: inline-block
+                padding: 10px 0
+                font-weight: 600
+                color: #333333

@@ -7,15 +7,15 @@
 	</xsl:template>
 	<xsl:template match="Zone">
 		<xsl:if test="position()=1">
-			<section class="head-about" id='section-about-1'>
+			<section class="head-about">
 				<div class="container">
 					<div class="head-menu">
-						<ul> 
-							<li> <a href="">về viva home</a></li>
-							<li> <a href="">tầm nhìn</a></li>
-							<li> <a href="">sứ mệnh</a></li>
-							<li> <a href="">giá trị cốt lõi</a></li>
-							<li> <a href="">mục tiêu chiến lượt</a></li>
+						<ul class='link-to-about-section'> 
+							<li> <a href="#section-about-1">về viva home</a></li>
+							<li> <a href="#section-about-2">tầm nhìn</a></li>
+							<li> <a href="#section-about-3">sứ mệnh</a></li>
+							<li> <a href="#section-about-4">giá trị cốt lõi</a></li>
+							<li> <a href="#section-about-4">mục tiêu chiến lượt</a></li>
 						</ul>
 					</div>
 				</div>
