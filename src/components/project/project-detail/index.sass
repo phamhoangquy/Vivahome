@@ -24,13 +24,45 @@
 		-ms-flex-align: center
 		-webkit-align-items: center
 		align-items: center
-	.gallery-top 
+		
+	.gallery-top
 		height: 80%
 		width: 100%
+		.swiper-wrapper
+			.swiper-slide
+				.swiper-slide-container
+					img
+						width: 100%
+						max-height: 100%
+						height: 800px
+						object-fit: cover
+					@media screen and ( max-width: 1024px )
+						width: 100%
+						max-height: 100%
+						height: 500px
+						object-fit: cover
+					@media screen and ( max-width: 576px )
+						width: 100%
+						max-height: 100%
+						height: 400px
+						object-fit: cover
 	.gallery-thumbs 
 		height: 20%
 		padding: 10px 0
 		cursor: pointer
+		.swiper-wrapper
+			.swiper-slide
+				.swiper-slide-container
+					img
+						width: 100%
+						max-height: 100%
+						height: 140px
+						object-fit: cover
+						@media screen and ( max-width: 576px )
+							width: 100%
+							max-height: 100%
+							height: 80px
+							object-fit: cover
 	.gallery-thumbs .swiper-slide 
 		width: 20%
 		height: 100%
@@ -189,6 +221,7 @@
 		// border-top: 1px solid #e0e0e0
 		// border-bottom: 1px solid #e0e0e0
 		// border-left: 1px solid #e0e0e0
+		
 	.icon_project-detail-2
 		display: flex
 		justify-content: center
@@ -284,15 +317,15 @@
 		margin-top: 30px
 		background: #ed202e
 		height: 35px
-		width: 190px
+		width: 220px
 		text-align: center
 		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)
 		@media screen and ( max-width: 1024px )
-			width: 80%
-			margin-top: 10px
+			width: 35%
+			margin-top: 30px
 		@media screen and ( max-width: 767px )
-			width: 80%
-			margin-top: 10px
+			width: 50%
+			margin-top: 20px
 		
 		a
 			color: #ffffff
@@ -392,55 +425,71 @@
 		@media screen and ( max-width: 576px)
 			left: 0
 			top: 160px
+	
 	.swiper-container
 		margin: 0
-		@media screen and ( max-width: 1350px)
-			margin: 0 50px
+		// @media screen and ( max-width: 1350px)
+		// 	margin: 0 50px
+	.col-lg-9
+		@media screen and ( max-width: 1024px )
+			margin-top: 30px
+		@media screen and ( max-width: 576px )
+			margin-top: 20px
 	.swiper-slide
 		.wrapper
 			position: relative
-			@media screen and ( max-width: 767px )
+			a
 				.img
 					width: 100%
-					height: 350px
+					max-height: 100%
+					height: 515px
+					@media screen and ( max-width: 1024px )
+						width: 100%
+						max-height: 100%
+						height: 400px
+					@media screen and ( max-width: 576px )
+						width: 100%
+						max-height: 100%
+						height: 400px
 					img
 						width: 100%
 						height: 100%
 						object-fit: cover
-			.content_project
-				position: absolute
-				z-index: 2
-				bottom: 0
-				left: 0
-				width: 425px
-				height: 70px
-				background: rgba(#16577c,.9)
-				padding: 0 25px 0 25px
-				text-align: center
-				border-left: 5px solid #ed202e
-				@media screen and ( max-width: 1024px )
-					width: 300px
-					height: 200px
-					background: rgba(#16577c,.7)
-				@media screen and ( max-width: 576px )
-					width: 100%
-					height: 200px
-					background: rgba(#16577c,.7)
-				.title
-					padding: 23px
+
+				.content_project
+					position: absolute
+					z-index: 2
+					bottom: 0
+					left: 0
+					width: 425px
+					height: 70px
+					background: rgba(#16577c,.9)
+					padding: 0 25px 0 25px
+					text-align: center
+					border-left: 5px solid #ed202e
 					@media screen and ( max-width: 1024px )
-						padding-top: 20px
-					@media screen and ( max-width: 767px )
-						padding-top: 20px
-					
-					h3
-						color: #fff
-						font-size: 16px
-						text-transform: uppercase
+						width: 300px
+						height: 80px
+						background: rgba(#16577c,.7)
+					@media screen and ( max-width: 576px )
+						width: 100%
+						height: 80px
+						background: rgba(#16577c,.7)
+					.title
+						padding: 23px
 						@media screen and ( max-width: 1024px )
-							font-size: 15px
+							padding-top: 20px
 						@media screen and ( max-width: 767px )
-							font-size: 14px
+							padding-top: 20px
+						
+						h3
+							color: #fff
+							font-size: 16px
+							text-transform: uppercase
+							@media screen and ( max-width: 1024px )
+								font-size: 15px
+							@media screen and ( max-width: 767px )
+								font-size: 14px
 						
 				// .text
 				// 	padding-top: 20px
@@ -465,16 +514,24 @@
 
 // section 7
 .project-detail-7
-	background-image: url('../img/project-detail/bg_project-detail-7.png')
+	background-image: url('/Data/Sites/1/skins/default/images/project-detail/bg_project-detail-7.png')
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: center
 	padding: 135px 0 135px 0
 	margin-top: 70px
+	@media screen and ( max-width: 1024px )
+		padding: 50px 0 90px 0
+	@media screen and ( max-width: 576px )
+		padding: 50px 0 30px 0
 	&::before
 		background: rgba(34,34,34,.4)
 	.left_project-detail-7
 		border-right: 1px solid #ffffff
+		@media screen and ( max-width: 1024px )
+			border-right: none
+		@media screen and ( max-width: 576px )
+			border-right: none
 		.title
 			padding-bottom: 24px
 			h2
@@ -505,8 +562,8 @@
 			padding: 0 10px
 		.frm-btnwrap
 			position: absolute
-			bottom: 20px
-			left: 15px
+			// bottom: 20px
+			// left: 15px
 			clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)
 			// @media screen and(max-width:1025px)
 			// 	margin: 0 !important
@@ -523,7 +580,8 @@
 					cursor: pointer
 					font-size: 16px
 					font-weight: 400
-					text-align: center
+					// text-align: center
+					padding-left: 0
 					border: none
 					// margin-right: 10px
 					&:nth-last-child(2)
