@@ -14,7 +14,9 @@
 			<div class="col-12 md-3 col-lg-3">
 				<div class="left_project-detail">
 					<div class="title-wrapper">
-						<h2>Thư Viện</h2>
+						<h2>
+							<xsl:value-of select="/ZoneList/ModuleTitle" disable-output-escaping="yes"></xsl:value-of>
+						</h2>
 					</div>
 					<ul>
 						<li>
@@ -71,7 +73,7 @@
 					</div>
 					<div class="content_project">
 						<div class="title">
-							<h3><xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of></h3>
+							<h3><xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of></h3>
 						</div>
 					</div>
 				</a>
