@@ -34,7 +34,8 @@
 					</img>
 				</a>
 			</div>
-			<div class="caption">
+			<xsl:if test="Title != ''">
+				<div class="caption">
 				<h2 class="title-caption">
 					<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 				</h2>
@@ -42,6 +43,7 @@
 					<xsl:value-of disable-output-escaping="yes" select="Description"></xsl:value-of>
 				</div>
 			</div>
+			</xsl:if>
 		</div>
 	</xsl:template>
 </xsl:stylesheet>
