@@ -7,21 +7,6 @@
 	</xsl:template>
 	<xsl:template match="Zone">
 		<xsl:if test="position()=1">
-			<section class="head-about">
-				<div class="container">
-					<div class="head-menu">
-						<ul class='link-to-about-section'> 
-							<li> <a href="#section-about-1">về viva home</a></li>
-							<li> <a href="#section-about-2">tầm nhìn</a></li>
-							<li> <a href="#section-about-3">sứ mệnh</a></li>
-							<li> <a href="#section-about-4">giá trị cốt lõi</a></li>
-							<li> <a href="#section-about-4">mục tiêu chiến lượt</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-		</xsl:if>
-		<xsl:if test="position()=1">
 			<section class="about-vivahome-1" id='section-about-1'>
 				<div class="container">
 					<div class="title_about">
