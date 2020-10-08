@@ -52,6 +52,16 @@
 					</div>
 					<div class="title_video">
 						<a href="">
+							<xsl:attribute name="data-fancybox">
+								<xsl:text>gallery-</xsl:text>
+								<xsl:value-of disable-output-escaping="yes" select="position()"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="href">
+								<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
 							<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 						</a>
 					</div>

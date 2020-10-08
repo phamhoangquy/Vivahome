@@ -33,7 +33,17 @@
 	<xsl:template match="News" mode="News1">
 		<div class="block-item">
 			<div class="item__imgg">
-				<a href="">
+				<a>
+					<xsl:attribute name="data-fancybox">
+						<xsl:text>gallery-</xsl:text>
+						<xsl:value-of disable-output-escaping="yes" select="position()"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:attribute name="href">
+						<xsl:value-of disable-output-escaping="yes" select="ImageUrl"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:attribute name="title">
+						<xsl:value-of select="Title"></xsl:value-of>
+					</xsl:attribute>
 					<img>
 						<xsl:attribute name="src">
 							<xsl:value-of select="ImageUrl"></xsl:value-of>
@@ -42,9 +52,6 @@
 							<xsl:value-of select="Title"></xsl:value-of>
 						</xsl:attribute>
 					</img>
-					<div class="img_icon">
-						<em class="material-icons">photo</em>
-					</div>
 				</a>
 			</div>
 			<div class="item__img-hover">
@@ -64,8 +71,18 @@
 			<div class="col-12 col-md-6 col-lg-6">
 				<div class="block-item">
 					<div class="item__img">
-						<a href="">
-							<img >
+						<a>
+							<xsl:attribute name="data-fancybox">
+								<xsl:text>gallery-</xsl:text>
+								<xsl:value-of disable-output-escaping="yes" select="position()"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="href">
+								<xsl:value-of disable-output-escaping="yes" select="ImageUrl"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							<img>
 								<xsl:attribute name="src">
 									<xsl:value-of select="ImageUrl"></xsl:value-of>
 								</xsl:attribute>
@@ -73,9 +90,6 @@
 									<xsl:value-of select="Title"></xsl:value-of>
 								</xsl:attribute>
 							</img>
-							<div class="img_icon">
-								<em class="material-icons">photo</em>
-							</div>
 						</a>
 					</div>
 					<div class="item__img-hover">
@@ -97,8 +111,18 @@
 			<div class="col-12 col-md-6 col-lg-6">
 				<div class="block-item">
 					<div class="item__img">
-						<a href="">
-							<img >
+						<a>
+							<xsl:attribute name="data-fancybox">
+								<xsl:text>gallery-</xsl:text>
+								<xsl:value-of disable-output-escaping="yes" select="position()"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="href">
+								<xsl:value-of disable-output-escaping="yes" select="ImageUrl"></xsl:value-of>
+							</xsl:attribute>
+							<xsl:attribute name="title">
+								<xsl:value-of select="Title"></xsl:value-of>
+							</xsl:attribute>
+							<img>
 								<xsl:attribute name="src">
 									<xsl:value-of select="ImageUrl"></xsl:value-of>
 								</xsl:attribute>
@@ -106,9 +130,6 @@
 									<xsl:value-of select="Title"></xsl:value-of>
 								</xsl:attribute>
 							</img>
-							<div class="img_icon">
-								<em class="material-icons">photo</em>
-							</div>
 						</a>
 					</div>
 					<div class="item__img-hover">
@@ -129,8 +150,18 @@
 	  	<div class="card_img_news_image_right">
 			<div class="block-item">
 				<div class="item__imgg">
-					<a href="">
-						<img >
+					<a>
+						<xsl:attribute name="data-fancybox">
+							<xsl:text>gallery-</xsl:text>
+							<xsl:value-of disable-output-escaping="yes" select="position()"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="href">
+							<xsl:value-of disable-output-escaping="yes" select="ImageUrl"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="title">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
+						<img>
 							<xsl:attribute name="src">
 								<xsl:value-of select="ImageUrl"></xsl:value-of>
 							</xsl:attribute>
@@ -138,9 +169,6 @@
 								<xsl:value-of select="Title"></xsl:value-of>
 							</xsl:attribute>
 						</img>
-						<div class="img_icon">
-							<em class="material-icons">photo</em>
-						</div>
 					</a>
 				</div>
 				<div class="item__img-hover">
