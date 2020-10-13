@@ -121,6 +121,7 @@
 		</xsl:if>
 	</xsl:template>
 	<xsl:template match="News">
+		<xsl:if test="position()>3">
 		<div class="col-12 col-md-6 col-lg-4">
 			<div class="bottom-wrapper-news-detail">
 				<time><xsl:value-of disable-output-escaping="yes" select="CreatedDate"></xsl:value-of></time>
@@ -163,5 +164,7 @@
 				</div>
 			</div>
 		</div>
+		</xsl:if>
+		
 	</xsl:template>
 </xsl:stylesheet>
